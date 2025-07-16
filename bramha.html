@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 60%;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"],
+    input[type="date"], input[type="number"], input[type="password"],
+    textarea, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      margin: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    .form-image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-image img {
+      max-width: 120px;
+      border-radius: 50%;
+      border: 3px solid #00796b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Registration Form</h2>
+
+  <div class="form-image">
+    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+  </div>
+
+  <form action="#" method="post">
+    <table>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="fname" placeholder="Enter First Name" required></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="lname" placeholder="Enter Last Name" required></td>
+      </tr>
+      <tr>
+        <td>Email ID:</td>
+        <td><input type="email" name="email" placeholder="Enter Email" required></td>
+      </tr>
+      <tr>
+        <td>Mobile Number:</td>
+        <td><input type="tel" name="mobile" placeholder="e.g. 9876543210" required></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="3" placeholder="Enter your address" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="Male" required>Male
+          <input type="radio" name="gender" value="Female">Female
+          <input type="radio" name="gender" value="Other">Other
+        </td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dob" required></td>
+      </tr>
+      <tr>
+        <td>Hobbies:</td>
+        <td>
+          <input type="checkbox" name="hobby" value="Reading">Reading
+          <input type="checkbox" name="hobby" value="Sports">Sports
+          <input type="checkbox" name="hobby" value="Music">Music
+        </td>
+      </tr>
+      <tr>
+        <td>Course:</td>
+        <td>
+          <select name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="BSc">B.Sc</option>
+            <option value="BCA">BCA</option>
+            <option value="BCom">B.Com</option>
+            <option value="BA">BA</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Password:</td>
+        <td><input type="password" name="password" placeholder="Create Password" required></td>
+      </tr>
+    </table>
+
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
